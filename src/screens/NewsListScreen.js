@@ -40,10 +40,10 @@ function NewsListScreen({ history }) {
   };
 
   return (
-    <div>
-      <SearchBox submitHandler={submitHandler} />
+    <div  >
+      {/* <SearchBox submitHandler={submitHandler} /> */}
       <br/>
-      {!keyword && <NewsCarousel />}
+      {/* {!keyword && <NewsCarousel />} */}
       {/* <Sport /> */}
       {/* <News /> */}
       {newsLoading ? (
@@ -51,11 +51,11 @@ function NewsListScreen({ history }) {
       ) : newsError ? (
         <Message variant="danger">{newsError}</Message>
       ) : (
-        <div>
+<div style={{  margin: '0 auto' }}>
 <Row className="justify-content-center">
             {news.map((newsitem) => (
               <Col key={newsitem._id} sm={12} md={3} lg={2} xl={12}>
-                <News newsitem={newsitem} />
+                <News newsitem={newsitem}  />
               </Col>
             ))}
           </Row>

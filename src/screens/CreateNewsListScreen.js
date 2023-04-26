@@ -80,18 +80,18 @@ return (
                         <Table striped bordered hover responsive className='table-sm'>
                             <thead>
                                 <tr>
-                                    <th>User</th>
+                                    {/* <th>USER</th> */}
                                     <th>TITLE</th>
                                     <th>DESCRIPTION</th>
-                                    <th>DATE</th>
-                                    <th></th>
+                                    <th>EDIT</th>
+                                    {/* <th></th> */}
                                 </tr>
                             </thead>
 
                             <tbody>
                                 {news.map(item => (
                                     <tr key={item._id}>
-                                        <td>{item.user}</td>
+                                        {/* <td>{item.user}</td> */}
 
                                         <td>{item.headline}</td>
                                         <td>{item.description}</td>
